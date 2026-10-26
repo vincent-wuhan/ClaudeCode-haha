@@ -14,6 +14,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "@anthropic-ai/mcpb": "^2.1.2",
     "@anthropic-ai/sandbox-runtime": "^0.0.44",
     "@anthropic-ai/sdk": "^0.80.0",
     "@aws-sdk/client-bedrock-runtime": "^3.1020.0",
@@ -22,6 +23,16 @@
     "@modelcontextprotocol/sdk": "^1.29.0",
     "@opentelemetry/api-logs": "^0.214.0",
     "@opentelemetry/core": "^2.6.1",
+    "@opentelemetry/exporter-logs-otlp-grpc": "^0.300.0",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.300.0",
+    "@opentelemetry/exporter-logs-otlp-proto": "^0.300.0",
+    "@opentelemetry/exporter-metrics-otlp-grpc": "^0.300.0",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.300.0",
+    "@opentelemetry/exporter-metrics-otlp-proto": "^0.300.0",
+    "@opentelemetry/exporter-prometheus": "^0.300.0",
+    "@opentelemetry/exporter-trace-otlp-grpc": "^0.300.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.300.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.300.0",
     "@opentelemetry/resources": "^2.6.1",
     "@opentelemetry/sdk-logs": "^0.214.0",
     "@opentelemetry/sdk-metrics": "^2.6.1",
@@ -40,6 +51,7 @@
     "emoji-regex": "^10.6.0",
     "env-paths": "^4.0.0",
     "execa": "^9.6.1",
+    "fflate": "^0.8.3",
     "figures": "^6.1.0",
     "fuse.js": "^7.1.0",
     "get-east-asian-width": "^1.5.0",
@@ -61,12 +73,14 @@
     "react": "^19.2.4",
     "react-reconciler": "^0.33.0",
     "semver": "^7.7.4",
+    "sharp": "^0.35.5",
     "shell-quote": "^1.8.3",
     "signal-exit": "^4.1.0",
     "stack-utils": "^2.0.6",
     "strip-ansi": "^7.2.0",
     "supports-hyperlinks": "^4.4.0",
     "tree-kill": "^1.2.2",
+    "turndown": "^7.2.4",
     "type-fest": "^5.5.0",
     "undici": "^7.24.6",
     "usehooks-ts": "^3.1.1",
@@ -81,5 +95,8 @@
   "devDependencies": {
     "vitepress": "^1.6.3",
     "vue": "^3.5.13"
-  }
+  },
+  "trustedDependencies": [
+    "protobufjs"
+  ]
 }

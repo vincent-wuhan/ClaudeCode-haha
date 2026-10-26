@@ -1,4 +1,7 @@
 import { feature } from 'bun:bundle';
+// bun build --compile does not apply bunfig.toml preload; import it explicitly
+// so globalThis.MACRO and the CALLER_DIR chdir behavior exist at runtime.
+import '../../preload.js';
 
 // Bugfix for corepack auto-pinning, which adds yarnpkg to peoples' package.jsons
 // eslint-disable-next-line custom-rules/no-top-level-side-effects
